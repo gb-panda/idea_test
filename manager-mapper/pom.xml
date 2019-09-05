@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>com.bjsxt</groupId>
+    <artifactId>manager</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.bjsxt</groupId>
+  <artifactId>manager-mapper</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>manager-mapper</name>
+
+  <!--mapper层用户操作数据库 增加相关依赖-->
+  <dependencies>
+    <!--mapper层对pojo的依赖-->
+    <dependency>
+      <groupId>com.bjsxt</groupId>
+      <artifactId>manager-pojo</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+
+    <!--mybatis  版本不需要添加，父工程中已经进行了统一管理-->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+    </dependency>
+
+    <!--spring整合mybatis 版本不需要添加，父工程中已经进行了统一管理-->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis-spring</artifactId>
+    </dependency>
+
+    <!--mysql 版本不需要添加，已经在父工程中进行了统一管理-->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+    </dependency>
+
+    <!--druid用于连接数据库 版本不需要添加，已经在父工程中进行了统一管理-->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid</artifactId>
+    </dependency>
+  </dependencies>
+</project>
